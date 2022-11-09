@@ -22,25 +22,25 @@ console.log("Is numberTeachers greater than numberStudents?", numberTeachers > n
 
 // YOU DO: log the result of the comparison: is numberTeachers less than numberStudents?
 // this should log: true
-
+console.log("Is numberTeachers less than numberStudents?", numberTeachers < numberStudents);
 // YOU DO: log the result of the comparison: is numberTeachers strictly equal to stringTeachers?
 // this should log: false
-
+console.log("Is numberTeachers strictly equal to stringTeachers?", numberTeachers === numberStudents);
 // YOU DO: log the result of the comparison: is numberTeachers not equal to numberStudents?
 // this should log: true
-
+console.log("Is numberTeachers not equal to numberStudents?", numberTeachers !== numberStudents);
 // YOU DO: log the result of the comparison: is numberStudents greater than or equal to 20?
 // this should log: true
-
+console.log("Is numberStudents greater than or equal to 20?", numberStudents >= 20);
 // YOU DO: log the result of the comparison: is numberStudents greater than or equal to 21?
 // this should log: false
-
+console.log("Is numberStudents greater than or equal to 21?", numberStudents >= 21);
 // YOU DO: log the result of the comparison: is numberStudents less than or equal to 20?
 // this should log: true
-
+console.log("Is numberStudents less than or equal to 20?", numberStudents <= 20);
 // YOU DO: log the result of the comparison: is numberStudents less than or equal to 21?
 // this should log: true
-
+console.log("Is numberStudents less than or equal to 21?", numberStudents <= 21);
 
 // #-------------------
 // PART 2: Articulating what you are doing
@@ -51,22 +51,32 @@ console.log("Is numberTeachers greater than numberStudents?", numberTeachers > n
 // Be as technically precise as possible, but don't just copy and paste a definition from the readings.
 // Make sure YOU can explain it that way!
 
-console.log(4 < 9);
-// YOU DO: Explain.
+console.log(4 < 9); 
+//The inner expression evaluates to whether the number 4 is less than 9, resulting in a Boolean which is then logged via console.log()
 
 var books = 3;
 console.log(4 < books);
-// YOU DO: Explain.
+// The number 3 is assigned to a new variable named "books"
+// The inner expression evaluates to whether 4 is less than the value of books, 
+// This results in a Boolean which is then logged via console.log()
+
 
 var friends = 6;
 var siblings = 2;
 console.log(friends > siblings);
-// YOU DO: Explain.
+// The number 6 is assigned to a new variable named "friends"
+// The number 2 is assigned to a new variable named "siblings"
+// The expression `friends>siblings` evaluates whether the value of friends is less than the value of siblings, resulting in a bool.
+// console.log logs the boolean. 
+
 
 var attendees = 9;
 var meals = 8;
 console.log(attendees !== meals);
-// YOU DO: Explain.
+// The number 9 is assigned to a new variable named attendees
+// The number 2 is assigned to a new variable named "siblings"
+// The expression `attendees !== meals` evaluates whether the value of attendees is strictly not equal to the value of meals. 
+// This results in a bool, which is then logged via console.log. 
 
 
 // #-------------------
@@ -89,15 +99,17 @@ var age = 1;
 
 // YOU DO:
 // Determine if the dog loves to play and loves treats
-
+console.log(lovesToPlay && lovesTreats);
 
 // Determine if the dog loves to play and loves the dog park
-
+console.log(lovesToPlay && lovesDogPark);
 
 // Determine if the dog loves to play or loves the dog park
-
+console.log(lovesToPlay || lovesDogPark);
 
 // Determine if the dog loves to play and is a puppy
+console.log(lovesToPlay && age<1);
 
 // What did your final line of code evaluate to? Why do you think that is? Explain.
-// ANSWER:
+// ANSWER: false because apparently puppyhood ends at 7 months (had to look it up). 
+//If either expression (lovesToPlay) or (age<1) evaluates to false, the result will be false. 
